@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save On Highlighted</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Save On Highlighted</h1>
+      <p class="hint">Hotkey: Ctrl+Shift+S</p>
+      <p id="status" class="status">Loading...</p>
+      <div class="themeRow">
+        <label for="themeToggle">Dark theme</label>
+        <input id="themeToggle" type="checkbox" />
+      </div>
+
+      <div class="buttons">
+        <button id="finishBtn" type="button">Finish Session</button>
+        <button id="clearBtn" type="button" class="secondary">Clear Session</button>
+      </div>
+
+      <section>
+        <h2>Preview</h2>
+        <textarea
+          id="preview"
+          class="previewInput"
+          spellcheck="false"
+          placeholder="Saved words will appear here..."
+        ></textarea>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
