@@ -6,7 +6,7 @@ Select text on any page, press a hotkey, and save entries line-by-line for expor
 
 ## Features
 
-- Save selected text with `Ctrl+Shift+S`
+- Save selected text with `Ctrl+S`
 - Store session entries in local extension storage
 - Editable preview field before export
 - Export session to `.txt` (`one line = one entry`)
@@ -25,7 +25,7 @@ Select text on any page, press a hotkey, and save entries line-by-line for expor
 
 1. Start reading in the browser.
 2. Highlight an unknown word or phrase.
-3. Press `Ctrl+Shift+S` to append it to the current session.
+3. Press `Ctrl+S` to append it to the current session.
 4. Open the extension popup to review or edit collected lines.
 5. Click **Finish Session** to export a `.txt` file.
 

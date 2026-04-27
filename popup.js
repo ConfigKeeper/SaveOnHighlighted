@@ -60,6 +60,7 @@ async function refreshPreview() {
   const response = await sendMessage({ type: "get-entries" });
   const entries = response?.entries ?? [];
   previewEl.value = entries.join("\n");
+  scrollPreviewToEnd();
   setStatus(`Entries in session: ${entries.length}`);
 }
 
@@ -107,6 +108,12 @@ function setStatus(text) {
 function setButtonsDisabled(disabled) {
   finishBtn.disabled = disabled;
   clearBtn.disabled = disabled;
+}
+
+function scrollPreviewToEnd() {
+  const endPosition = previewEl.value.length;
+  previewEl.scrollTop = previewEl.scrollHeight;
+  previewEl.setSelectionRange(endPosition, endPosition);
 }
 
 function triggerPopupDownload(filename, body) {

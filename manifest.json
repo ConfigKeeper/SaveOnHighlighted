@@ -18,7 +18,7 @@
   "commands": {
     "save-selection": {
       "suggested_key": {
-        "default": "Ctrl+Shift+S"
+        "default": "Ctrl+S"
       },
       "description": "Save currently selected text"
     }
